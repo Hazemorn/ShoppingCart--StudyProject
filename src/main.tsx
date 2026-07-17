@@ -4,9 +4,12 @@ import './assets/styles/index.scss'
 import './assets/styles/_reset.scss'
 import './assets/styles/_titles.scss'
 import App from './App.tsx'
+import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <BrowserRouter>
     <App />
+    </BrowserRouter>
   </StrictMode>,
 )
